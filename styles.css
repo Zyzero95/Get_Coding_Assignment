@@ -75,6 +75,7 @@ footer{
   display: flex;
 }
 
+/* Header Flex Container Styling */
 .header_flex-container{
   width: 90%;
 
@@ -99,6 +100,7 @@ footer{
   margin-right: 2.5rem;
 }
 
+/* Body Flex Container Styling */
 .body_flex-container{
   flex-direction: column;
   justify-content: center;
@@ -124,6 +126,7 @@ footer{
   padding-right: 1.5rem;
 }
 
+/* Footer Flex Container Styling */
 .footer_flex-container{
   margin-top: 3%;
   margin-right: 3%;
