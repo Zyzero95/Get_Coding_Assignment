@@ -1,4 +1,4 @@
-/* makes sizing simpler */
+/* Initial reset */
 
 *,
 *::before,
@@ -31,17 +31,14 @@ video {
   max-width: 100%;
 }
 
+/* Header Styling */
 header{
   min-height: 50vh;
-  
-  background-image: url("getcoding.jpg");
+
+  background-image: url("src/assets/getcoding.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-h1{
-  font-size: 2.25rem;
 }
 
 a{
@@ -50,14 +47,23 @@ a{
   color: black;
 }
 
-/* min body height */
+a:hover:not(:focus)
+{
+  color: #587291
+} 
 
+/* Body Styling */
 body {
   min-height: 45vh;
   background-color: #587291;
 }
 
-/* footer spacing at bottom */
+h1{
+  font-size: 2.25rem;
+}
+
+/* Footer Styling */
+/* Footer spacing at bottom */
 footer{
   position: absolute;
 
@@ -90,7 +96,6 @@ footer{
   position: absolute;
 
   justify-content: center;
-
   flex-wrap: wrap;
 
   background-color: #F8F8F8;
@@ -126,11 +131,16 @@ footer{
   padding-right: 1.5rem;
 }
 
+.body_readmore-button:hover:not(:focus){
+  border: 1px solid white;
+}
+
 /* Footer Flex Container Styling */
 .footer_flex-container{
   margin-top: 3%;
   margin-right: 3%;
   margin-bottom: 3%;
+
   justify-content: flex-end;
   flex-wrap: wrap;
 }
