@@ -86,12 +86,7 @@ h1{
 /* Footer Styling */
 /* Footer spacing at bottom */
 footer{
-  position: fixed;
-  /* display: grid; */
-  bottom: 0;
   width: 100%;
-  min-height: 5vh;
-
   background-color: #F8F8F8;
 }
 
