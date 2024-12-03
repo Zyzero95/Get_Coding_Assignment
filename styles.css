@@ -35,6 +35,8 @@ video {
 header{
   min-height: 50vh;
 
+  display: grid;
+
   background-image: url("src/assets/getcoding.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -100,17 +102,18 @@ footer{
 .header_nav{
   width: 90%;
 
+  align-self: start;
+  justify-self: center;
+
   border: 1px solid #F2F2F2;
   box-shadow: 1px 1px 21px #DCDCDC;
 
   justify-content: center;
   text-align:center;
   margin-top: 5%;
-  margin-left: 5%;
 
   padding: 2%;
 
-  position: fixed;
 
   background-color: #F8F8F8;
 }
@@ -147,6 +150,7 @@ footer{
   align-items: center;
 }
 
+/* Readmore Button Styling */
 .body_readmore-button{
   background: #5B2E48;
   border: 1px solid #5B2E48;
@@ -164,9 +168,8 @@ footer{
 
 /* Footer Flex Container Styling */
 .footer_nav{
-  margin-top: 3%;
   margin-right: 3%;
-  margin-bottom: 3%;
+  padding-top: 1%;
 
   justify-content: flex-end;
   text-align: center;
