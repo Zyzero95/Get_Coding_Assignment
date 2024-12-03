@@ -46,13 +46,15 @@ a{
   text-decoration: none;
   font-size: 1.5rem;
 
+  white-space: nowrap;
+
   color: black;
   transition: all 0.5s ease-in-out;
 }
 
 a:hover:not(:focus) {
   color: #587291;
-  font-size: 1.6rem;
+  font-size: 1.51rem;
 } 
 
 /* Body Styling */
@@ -63,6 +65,7 @@ body {
 
 h1{
   font-size: 2.25rem;
+  text-wrap: balance;
 }
 
 .body_readmore-button{
@@ -77,52 +80,68 @@ h1{
 /* Footer Styling */
 /* Footer spacing at bottom */
 footer{
-  position: absolute;
+  position: fixed;
 
   bottom: 0;
   width: 100%;
-  min-height: 7vh;
+  min-height: 5vh;
 
   background-color: #F8F8F8;
 }
 
 /* Flex Containers */
-.header_flex-container,
+.header_nav,
 .body_flex-container,
-.footer_flex-container{
+.footer_nav{
   display: flex;
 }
 
 /* Header Flex Container Styling */
-.header_flex-container{
+.header_nav{
   width: 90%;
 
   border: 1px solid #F2F2F2;
   box-shadow: 1px 1px 21px #DCDCDC;
 
+  justify-content: center;
+  text-align:center;
   margin-top: 5%;
   margin-left: 5%;
 
   padding: 2%;
 
-  position: absolute;
-
-  justify-content: center;
-  flex-wrap: wrap;
+  position: fixed;
 
   background-color: #F8F8F8;
 }
 
-.header_flex-container nav a{
+/* Navbar UL styling */
+.header_ul,
+.footer_ul {
+  list-style-type: none;
+}
+
+.header_ul li,
+.footer_ul li {
+  float: left;
+}
+
+.header_nav a{
   margin-right: 2.5rem;
+}
+
+.footer_nav a{
+  margin-right: 0.625rem;
 }
 
 /* Body Flex Container Styling */
 .body_flex-container{
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   flex-wrap: wrap;
 
+  padding-inline: 1rem;
   height: 50vh;
 
   align-items: center;
@@ -144,15 +163,11 @@ footer{
 }
 
 /* Footer Flex Container Styling */
-.footer_flex-container{
+.footer_nav{
   margin-top: 3%;
   margin-right: 3%;
   margin-bottom: 3%;
 
   justify-content: flex-end;
-  flex-wrap: wrap;
-}
-
-.footer_flex-container nav a{
-  margin-right: 0.625rem;
+  text-align: center;
 }
