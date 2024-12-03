@@ -33,8 +33,6 @@ video {
 
 /* Header Styling */
 header{
-  min-height: 50vh;
-
   display: grid;
 
   background-image: url("src/assets/getcoding.jpg");
@@ -61,7 +59,13 @@ a:hover:not(:focus) {
 
 /* Body Styling */
 body {
-  min-height: 45vh;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 45vh 50vh 5vh;
+}
+
+/* Main Styling */
+main {
   background-color: #587291;
 }
 
@@ -70,11 +74,11 @@ h1{
   text-wrap: balance;
 }
 
-.body_readmore-button{
+.main_readmore-button{
   transition: all 0.5s ease-in-out;
 }
 
-.body_readmore-button:hover:not(:focus){
+.main_readmore-button:hover:not(:focus){
   border: 2px solid white;
   font-weight: bold;
 }
@@ -83,7 +87,7 @@ h1{
 /* Footer spacing at bottom */
 footer{
   position: fixed;
-
+  /* display: grid; */
   bottom: 0;
   width: 100%;
   min-height: 5vh;
@@ -93,7 +97,7 @@ footer{
 
 /* Flex Containers */
 .header_nav,
-.body_flex-container,
+.main_flex-container,
 .footer_nav{
   display: flex;
 }
@@ -138,20 +142,20 @@ footer{
 }
 
 /* Body Flex Container Styling */
-.body_flex-container{
+.main_flex-container{
   flex-direction: column;
   justify-content: center;
   text-align: center;
   flex-wrap: wrap;
 
   padding-inline: 1rem;
-  height: 50vh;
+  height: 100%;
 
   align-items: center;
 }
 
 /* Readmore Button Styling */
-.body_readmore-button{
+.main_readmore-button{
   background: #5B2E48;
   border: 1px solid #5B2E48;
   border-radius: 5px;
