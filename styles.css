@@ -49,7 +49,7 @@ a{
   white-space: nowrap;
 
   color: black;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s;
 }
 
 a:hover:not(:focus) {
@@ -74,12 +74,11 @@ h1{
   text-wrap: balance;
 }
 
-.main_readmore-button{
-  transition: all 0.5s ease-in-out;
+.main_button{
+  transition: all 0.5s linear;
 }
 
-.main_readmore-button:hover:not(:focus){
-  border: 2px solid white;
+.main_button:hover:not(:focus){
   font-weight: bold;
 }
 
@@ -92,7 +91,7 @@ footer{
 
 /* Flex Containers */
 .header_nav,
-.main_flex-container,
+.main_flexcontainer,
 .footer_nav{
   display: flex;
 }
@@ -137,7 +136,7 @@ footer{
 }
 
 /* Body Flex Container Styling */
-.main_flex-container{
+.main_flexcontainer{
   flex-direction: column;
   justify-content: center;
   text-align: center;
@@ -150,7 +149,7 @@ footer{
 }
 
 /* Readmore Button Styling */
-.main_readmore-button{
+.main_button{
   background: #5B2E48;
   border: 1px solid #5B2E48;
   border-radius: 5px;
